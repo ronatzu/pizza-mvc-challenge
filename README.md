@@ -45,6 +45,7 @@ pizza-app/
 - Express.js
 - express-validator
 - UUID
+- Cors
 - Jest
 
 ### Frontend
