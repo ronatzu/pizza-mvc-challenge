@@ -1,13 +1,17 @@
 
 import './App.css'
+import {PizzaRouter} from "./router/PizzaRouter.jsx";
+import {BrowserRouter} from "react-router";
+import {Header} from "./components/Header.jsx";
 
 function App() {
 
   return (
       <>
-          <h1 className="text-3xl font-bold underline">
-              Hello world!
-          </h1>
+          <BrowserRouter>
+              <Header/>
+              <PizzaRouter/>
+          </BrowserRouter>
       </>
   )
 }
