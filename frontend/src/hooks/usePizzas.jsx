@@ -1,15 +1,16 @@
 import { useEffect, useState } from 'react';
-import axios from 'axios';
+import { fetchPizzas } from '../services/api';
 
 export const usePizzas = () => {
     const [pizzas, setPizzas] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+
     useEffect(() => {
-        const fetchPizzas = async () => {
+        const getPizzas = async () => {
             try {
-                const response = await axios.get(`http://localhost:3000/api/pizzas`);
-                setPizzas(response.data);
+                const data = await fetchPizzas();
+                setPizzas(data);
             } catch (err) {
                 setError(err);
             } finally {
@@ -17,9 +18,10 @@ export const usePizzas = () => {
             }
         };
 
-        fetchPizzas();
+        getPizzas();
     }, []);
 
     return { pizzas, loading, error };
 };
+
 
