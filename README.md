@@ -16,7 +16,6 @@ Este repositorio contiene la implementación **Full Stack** de una aplicación d
 - [Backend](#backend)
 - [Pruebas](#pruebas)
 - [Variables de Entorno](#variables-de-entorno)
-- [Notas Adicionales](#notas-adicionales)
 
 ---
 
@@ -24,16 +23,15 @@ Este repositorio contiene la implementación **Full Stack** de una aplicación d
 
 ```
 pizza-app/
-├── backend/                # API RESTful con Node.js + Express
+├── backend/                
 │   ├── src/
 │   ├── test/
 │   └── README.md
-├── frontend/               # React 19 + Vite + Tailwind
+├── frontend/              
 │   ├── src/
 │   ├── public/
-│   └── README.md
-├── package.json            # Opcional si usas workspaces
-└── README.md               # Este archivo
+│   └── README.md        
+└── README.md                
 ```
 
 ---
@@ -143,4 +141,19 @@ VITE_API_BASE_URL=http://localhost:3000/api
 ```
 
 ---
+
+## Despliegue a Producción
+
+### Frontend
+
+
+[Frontend en producción](https://pizza-mvc-challenge-1.onrender.com)
+
+### Backend
+
+[Backend en producción](https://pizza-mvc-challenge.onrender.com)
+
+
+
+
 
